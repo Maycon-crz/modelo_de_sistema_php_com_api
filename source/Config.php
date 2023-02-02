@@ -1,16 +1,16 @@
 <?php
 
-define("ROOT", "https://www.localhost/PHP_tips/PHP_TIPS/ep07");
+define("ROOT", "http://localhost/HOMOLOGACAO_WEB/sistema_de_venda_de_ingressos");
 
-define("SITE", "#PHPTips");
+define("SITE", "#Cine7D");
 
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
     "host" => "localhost",
-    "port" => "3306",
-    "dbname" => "aulas",
+    "port" => "8000",
+    "dbname" => "recicladartedb",
     "username" => "root",
-    "passwd" => "",
+    "passwd" => "123",
     "options" => [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

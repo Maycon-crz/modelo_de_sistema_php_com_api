@@ -11,7 +11,7 @@
 		<button>Enviar Mensagem!</button>
 	</form>
 </div>
-<?php $v->start("scripts"); ?>
+<?php $v->start("js"); ?>
 <script>
 	$(function(){
 		$("button").after('<button type="reset">Limpar</button>');

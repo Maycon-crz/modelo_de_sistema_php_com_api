@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
+class ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4
 {
     public static $files = array (
         'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
@@ -15,13 +15,22 @@ class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
         'bdc465a053da7f7ddb072631f6d41d45' => __DIR__ . '/..' . '/league/plates/src/Extension/LayoutSections/layout-sections.php',
         'afa76803f24616d7599be3b7b0846adc' => __DIR__ . '/..' . '/league/plates/src/Extension/Folders/folders.php',
         '16c5be35e32c6cf916d875518b909210' => __DIR__ . '/..' . '/league/plates/src/Util/util.php',
-        '68e74547a8bf18649868e0193df92031' => __DIR__ . '/../..' . '/source/Config.php',
+        'a52063234a1456f0b823a655383face4' => __DIR__ . '/../..' . '/source/Config.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Source\\' => 7,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
         'L' => 
         array (
@@ -30,6 +39,8 @@ class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
         'C' => 
         array (
             'CoffeeCode\\Router\\' => 18,
+            'CoffeeCode\\Paginator\\' => 21,
+            'CoffeeCode\\Optimizer\\' => 21,
             'CoffeeCode\\DataLayer\\' => 21,
         ),
     );
@@ -39,6 +50,18 @@ class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
         array (
             0 => __DIR__ . '/../..' . '/source',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
         'League\\Plates\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/plates/src',
@@ -46,6 +69,14 @@ class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
+        ),
+        'CoffeeCode\\Paginator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/paginator/src',
+        ),
+        'CoffeeCode\\Optimizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/optimizer/src',
         ),
         'CoffeeCode\\DataLayer\\' => 
         array (
@@ -60,9 +91,9 @@ class ComposerStaticInit63d5b882969a8abd7672cafe29afd22d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit63d5b882969a8abd7672cafe29afd22d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit63d5b882969a8abd7672cafe29afd22d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit63d5b882969a8abd7672cafe29afd22d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2db218353b1fd4b457caebd2df6f3ae4::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,12 +1,12 @@
 {
-  "name": "robsonvleite/phptips007",
-  "description": "DESCOMPLICANDO MVC COM PHP DO JEITO CERTO",
+  "name": "mayconnascimentodeoliveira/recicladarte5",
+  "description": "SITE Cinema 7D",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
-      "name": "Robson V. Leite",
-      "email": "cursos@upinside.com.br"
+      "name": "Maycon Nascimento de Oliveira",
+      "email": "nmaycon304@gmail.com"
     }
   ],
   "autoload": {
@@ -18,10 +18,12 @@
     ]
   },
   "require": {
-    "php": "^7.3",
-    "ext-pdo": "*",
-    "coffeecode/datalayer": "1.1.*",
     "coffeecode/router": "1.0.*",
-    "league/plates": "v4.0.0-alpha"
+    "coffeecode/datalayer": "1.1.*",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/optimizer": "2.0.*",
+    "coffeecode/paginator": "1.0.*",
+    "phpmailer/phpmailer": "6.0.*",
+    "monolog/monolog": "2.0.*"
   }
 }

@@ -2,33 +2,31 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
-$route = new \CoffeeCode\Router\Router(ROOT);
+$router = new \CoffeeCode\Router\Router(ROOT);
 
 /**
  * APP
  */
-$route->namespace("Source\App");
+$router->namespace("Source\Controllers");
 
 /**
  * web
  */
-$route->group(null);
-$route->get("/", "Web:home");
-$route->get("/contato", "Web:contact");
+$router->group(null);
+$router->get("/", "WebController:home");
+$router->get("/contato", "WebController:contact");
 
 /**
  * ERROR
  */
-$route->group("ops");
-$route->get("/{errcode}", "Web:error");
+$router->group("ops");
+$router->get("/{errcode}", "WebController:error");
 
 /**
  * PROCESS
  */
-$route->dispatch();
+$router->dispatch();
 
-if ($route->error()) {
-    $route->redirect("/ops/{$route->error()}");
+if ($router->error()) {
+    $router->redirect("/ops/{$router->error()}");
 }
-
-//Parei em 16:29
