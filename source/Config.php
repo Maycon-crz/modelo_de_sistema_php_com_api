@@ -1,8 +1,8 @@
 <?php
 
-define("ROOT", "http://localhost/HOMOLOGACAO_WEB/sistema_de_venda_de_ingressos");
+define("ROOT", "http://localhost/HOMOLOGACAO_WEB/modelo_de_sistema_php_puro");
 
-define("SITE", "#Cine7D");
+define("SITE", "#Modelo");
 
 define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
