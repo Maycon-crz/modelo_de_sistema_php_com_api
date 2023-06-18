@@ -16,7 +16,7 @@
 				echo $v->section("slidebar");
 			else:
 				?>
-				<a title="Nome do Site: Cine 7D" class="navbar-brand" href="<?= url(''); ?>">Cine 7D</a>
+				<a title="Nome do Site: MODELO" class="navbar-brand" href="<?= url(''); ?>">MODELO</a>
 				<a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span>| | |</span>
                 </a>
@@ -27,7 +27,7 @@
 					</li><li>
 						<a title="" href="<?= url("teste"); ?>">CATEGORIAS</a>
 					</li><li>
-						<a title="" href="<?= url("contato"); ?>">DESTAQUES</a>
+						<a title="" href="<?= url("contato"); ?>">DESTAQUES</a>					
 					</li>
 				</ul><ul class="navbar-nav ml-auto">
 					<li>

@@ -1,24 +1,15 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'mayconnascimentodeoliveira/recicladarte5',
+        'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
+        'name' => 'mayconnascimentodeoliveira/modelo',
         'dev' => true,
     ),
     'versions' => array(
-        'coffeecode/datalayer' => array(
-            'pretty_version' => '1.1.8',
-            'version' => '1.1.8.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../coffeecode/datalayer',
-            'aliases' => array(),
-            'reference' => '52e209190752eccc0bfd8ff3abcdd607ed4c01c1',
-            'dev_requirement' => false,
-        ),
         'coffeecode/optimizer' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -26,15 +17,6 @@
             'install_path' => __DIR__ . '/../coffeecode/optimizer',
             'aliases' => array(),
             'reference' => '53c00844e3316a74f8f076b0b325ceb140d41b70',
-            'dev_requirement' => false,
-        ),
-        'coffeecode/paginator' => array(
-            'pretty_version' => '1.0.7',
-            'version' => '1.0.7.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../coffeecode/paginator',
-            'aliases' => array(),
-            'reference' => 'a6941246f7ccd842be2072d796d4fb448c22cdb1',
             'dev_requirement' => false,
         ),
         'coffeecode/router' => array(
@@ -55,13 +37,13 @@
             'reference' => 'f53f4c1fa4bf307d0f3858a348172ff4faf7669a',
             'dev_requirement' => false,
         ),
-        'mayconnascimentodeoliveira/recicladarte5' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'mayconnascimentodeoliveira/modelo' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
