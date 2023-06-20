@@ -5,10 +5,10 @@ namespace Source\Models\Authentication\Services;
 class AuthBO{
     private static $key;
     private static $externalAppKey;
-    public function __construct(){		
+    public function __construct(){
 		self::$key = "chave_de_api";
         self::$externalAppKey = "chave_externa_de_api";
-	}    
+	}
     public function generateAppKey() : array{
         /*Caso o acesso da API for pelo site*/
         session_start();
@@ -20,7 +20,7 @@ class AuthBO{
         /*Caso o acesso da API for externo*/
         return self::$externalAppKey;
     }
-    public function getGenerateToken(string $email){        
+    public function getGenerateToken(string $email){
         $payloadParameter = [			    
             'name' => 'Nome do usuario',
             'email' => $email,

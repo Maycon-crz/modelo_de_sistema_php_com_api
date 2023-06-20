@@ -1,7 +1,7 @@
 <?php
 
 namespace Source\Controllers\Middlewares;
-use Source\Models\Authentication\Auth;
+use Source\Models\Authentication\Services\AuthBO;
 use Source\Models\Lib\GenericTools;
 
 use Exception;
@@ -9,21 +9,21 @@ use Exception;
 class MiddlewareForSimpleAccess{	
 	private $appKey;	
 	private $frontEnd;
-    private $auth;
+    private $authBO;
     private $genericTools;
 
     public function __construct(){
-        $this->auth = new Auth();
+        $this->authBO = new AuthBO();
         $this->genericTools = new GenericTools();
     }
 	
-	public function middleware($view) :bool{		
+	public function middleware($view) :bool{
 		try{
-			$this->frontEnd = isset($_POST['front_end']) ? $this->genericTools->filtrando($_POST['front_end']) : "";
-			$this->appKey = isset($_POST['app_key']) ? $this->genericTools->filtrando($_POST['app_key']) : "";			
+			$this->frontEnd = isset($_POST['front_end']) ? $this->genericTools->filter($_POST['front_end']) : "";
+			$this->appKey = isset($_POST['app_key']) ? $this->genericTools->filter($_POST['app_key']) : "";			
 			if($this->frontEnd === "external"){
-				if($this->auth->checkAuth()){
-					if($this->appKey === $this->auth->getExternalAppKey()){
+				if($this->authBO->checkAuth()){
+					if($this->appKey === $this->authBO->getExternalAppKey()){
 						return true;
 					}
 				}

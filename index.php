@@ -17,6 +17,13 @@ $router->get("/", "WebController:home");
 $router->get("/contato", "WebController:contact");
 
 /**
+ * API
+ */
+$router->group("/api");
+$router->post("/createsession", "AuthenticationController:createSession");
+$router->post("/login", "AuthenticationController:loginController");
+
+/**
  * ERROR
  */
 $router->group("ops");

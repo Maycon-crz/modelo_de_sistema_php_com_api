@@ -4,8 +4,8 @@ namespace Source\Controllers;
 
 use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
-use Source\Support\Seo;
 use Source\Models\User;
+use Source\Support\Seo;
 
 class WebController{
 	/*@var Engine*/
@@ -60,7 +60,7 @@ class WebController{
 			"Politica de Privacidade | ".SITE,
 			"Política de Privacidade",
 			url("politica"),
-			"https://via.placeholder.com/1200x628.png?text=Politica+Cine_7D"
+			"https://via.placeholder.com/1200x628.png?text=Politica"
 		);
 
 		echo $this->view->render("politics", [

@@ -5,8 +5,5 @@
     </article>    
 </section>
 
-<?= $v->start("modal"); ?>
-    <?php include "theme/include/modalLogin.php"; ?>
-<?= $v->end(); $v->start("js"); ?>
-    <script src="<?= url('theme/assets/js/authentication.js'); ?>"></script>
+<?= $v->start("js"); ?>
 <?= $v->end(); ?>

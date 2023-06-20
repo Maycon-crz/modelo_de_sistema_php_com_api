@@ -1,8 +1,6 @@
 <?php
     namespace Source\Models\Lib;
     
-    use Source\Models\Lib\Conn;
-    
     use \PDO;
     use PDOException;
     
@@ -10,11 +8,7 @@
     use Exception;
     use InvalidArgumentException;
     
-	class GenericTools{		
-	    private static $con;
-	    public function __construct(){
-	        self::$con = (new Conn())->getConn();
-	    }
+	class GenericTools {
 	    public function filter($dados){
 			$dados = trim($dados);
 			$dados = htmlspecialchars($dados);			

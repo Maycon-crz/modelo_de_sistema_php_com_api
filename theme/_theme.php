@@ -33,7 +33,7 @@
 					<li>
 						<a title="" href="<?= url("contato"); ?>">CONTATO</a>
 					</li><li>
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</button>
+						<a data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</a>
 					</li>
 				</ul>
 			<?php
@@ -42,8 +42,7 @@
 	</nav>
 	<main class="main_content container-fluid">
 		<?= $v->section("content"); ?>
-	</main>
-	<?= $v->section("modal"); ?>
+	</main>	
 	<div class="loadingGif"></div>
 	<footer class="row px-5 pt-5 mt-5">
 		<section class="col-12 rounded-pill bg-dark text-center pt-5 pb-5 mb-5">
@@ -106,13 +105,22 @@
 		<section class="text-center">
 			<?= SITE; ?> - Todos os Direitos Reservados	
 		</section>
-	</footer>	
+	</footer>
+	<form><input type="hidden" name="urlSite" id="urlSite" value="<?= url() ?>"></form>
 	<!-- Javascrip bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- --- -->
 	<!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- --- -->
-<?= $v->section("js"); ?>
+	<script src="<?= url('theme/assets/js/authentication/session.js'); ?>"></script>
+	<?php if (!isset($_SESSION["token"]) || $_SESSION["token"] === false) : ?>	
+		<?php include "theme/include/modalLogin.php"; ?>
+		<script src="<?= url('theme/assets/js/authentication/login.js'); ?>"></script>
+	<?php else: ?>
+		<script src="<?= url('theme/assets/js/authentication/logOut.js'); ?>"></script>
+	<?php endif; ?>
+	<?= $v->section("js"); ?>
+
 </body>
 </html>

@@ -8,11 +8,12 @@
             </div>
             <div class="modal-body">
                 <section class="row border border-primary rounded mb-3">
-                    <form action="<?= url("source/Controllers/AuthenticationController.php") ?>" method="" id="userLoginForm" class="col-12">
+                    <form action="" method="" id="userLoginForm" class="col-12">
                         <label class="" for="email">E-mail</label>
                         <input type="email" name="email" id="email" class="form-control mb-3">
                         <label class="" for="password">Senha</label>
                         <input type="password" name="password" id="password" class="form-control mb-3">
+                        <span class="form-control" id="smgLogin"></span>
                         <button type="submit" class="form-control btn btn-outline-primary mb-3">Entrar</button>
                     </form>
                 </section>
@@ -36,7 +37,7 @@
                         <label class="" for="password_cad">Senha</label>
                         <input type="password" name="password" id="password_cad" class="form-control mb-3">
                         <label class="" for="password_conf_cad">Confirme sua Senha</label>
-                        <input type="password" name="password_conf" id="password_conf_cad" class="form-control mb-3">
+                        <input type="password" name="password_conf" id="password_conf_cad" class="form-control mb-3">                        
                         <button type="submit" class="form-control btn btn-outline-primary mb-3">Cadastrar</button>
                     </form>
                 </section>
