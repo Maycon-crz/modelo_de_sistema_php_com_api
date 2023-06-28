@@ -12,9 +12,4 @@
 	</form>
 </div>
 <?php $v->start("js"); ?>
-<script>
-	$(function(){
-		$("button").after('<button type="reset">Limpar</button>');
-	});
-</script>
 <?php $v->end(); ?>

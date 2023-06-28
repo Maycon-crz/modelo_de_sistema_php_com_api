@@ -31,17 +31,19 @@
 						<a title="" href="<?= url("contato"); ?>">CONTATO</a>
 					</li>
 				</ul>
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto">					
+					<?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>					
+					<li>
+						<button type="button" class="form-control btn btn-outline-success py-2 my-2" data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</button>
+					</li>
+					<?php else: ?>
 					<li>
 						<a title="" class="py-2 my-2 mx-4" href="<?= url("user"); ?>">Painel</a>
 					</li>
-					<li>
-					<?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>
-						<button type="button" class="form-control btn btn-outline-success py-2 my-2" data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</button>
-					<?php else: ?>
+					<li>					
 						<button type="button" id="buttonLogOut" class="form-control btn btn-outline-danger py-2 my-2">SAIR</button>
-					<?php endif; ?>
 					</li>
+					<?php endif; ?>					
 				</ul>
 			<?php endif; ?>
 		</div>
