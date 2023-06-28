@@ -34,7 +34,7 @@ class UserController extends MiddlewareAccess{
 		$this->postDTO = new PostDTO();
 	}
 	public function dashboard($data): void{
-		// $this->middleware($this->genericTools, $this->view, $this->authBO);
+		$this->middleware($this->genericTools, $this->view, $this->authBO);
 		$head = $this->seo->render(
 			"Painel | ".SITE,
 			"Pinel do usuário",
@@ -47,7 +47,7 @@ class UserController extends MiddlewareAccess{
 	}
 	public function post($data){
 		$this->isRoute = false;
-		// $this->middleware($this->genericTools, $this->view, $this->authBO, $this->isRoute);
+		$this->middleware($this->genericTools, $this->view, $this->authBO, $this->isRoute);
 		switch($data["section"]){
 			case "get_posts":
 				$this->title = isset($_POST["title"]) ? $this->genericTools->filter($_POST["title"]) : "";
