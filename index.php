@@ -15,6 +15,7 @@ $router->namespace("Source\Controllers");
 $router->group(null);
 $router->get("/", "WebController:home");
 $router->get("/contato", "WebController:contact");
+$router->get("/user", "UserController:dashboard");
 
 /**
  * API
@@ -22,6 +23,9 @@ $router->get("/contato", "WebController:contact");
 $router->group("/api");
 $router->post("/createsession", "AuthenticationController:createSession");
 $router->post("/login", "AuthenticationController:loginController");
+$router->post("/logout", "AuthenticationController:logoutController");
+$router->post("/user_registration", "AuthenticationController:userRegistrationController");
+$router->post("/post/{section}", "UserController:post");
 
 /**
  * ERROR

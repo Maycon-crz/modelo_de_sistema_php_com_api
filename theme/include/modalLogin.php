@@ -10,9 +10,9 @@
                 <section class="row border border-primary rounded mb-3">
                     <form action="" method="" id="userLoginForm" class="col-12">
                         <label class="" for="email">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control mb-3">
+                        <input type="email" name="email" id="email" class="form-control mb-3" required>
                         <label class="" for="password">Senha</label>
-                        <input type="password" name="password" id="password" class="form-control mb-3">
+                        <input type="password" name="password" id="password" class="form-control mb-3" required>
                         <span class="form-control" id="smgLogin"></span>
                         <button type="submit" class="form-control btn btn-outline-primary mb-3">Entrar</button>
                     </form>
@@ -21,23 +21,19 @@
                     <div class="col-12">
                         <h4>Cadastre-se<h4>
                     </div>
-                    <form action="" method="" class="col-12">
+                    <form action="<?= url("");?>" method="" id="userRegistrationForm" class="col-12">
                         <label class="" for="full_name">Nome Completo</label>
                         <input type="text" name="full_name" id="full_name" class="form-control mb-3">
                         <label class="" for="email_cad">E-mail</label>
                         <input type="email" name="email" id="email_cad" class="form-control mb-3">
                         <label class="" for="email_conf_cad">Confirma seu E-mail</label>
-                        <input type="email" name="email_conf" id="email_conf_cad" class="form-control mb-3">
-                        <label class="" for="date_of_birth">Data de Nascimento</label>
-                        <input type="text" name="date_of_birth" id="date_of_birth" class="form-control mb-3">
-                        <label class="" for="address">Endereço</label>
-                        <input type="text" name="address" id="address" class="form-control mb-3">
-                        <label for="phone">Enter a phone number:</label>
-                        <input type="tel" class="form-control" id="tel" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                        <input type="email" name="email_conf" id="email_conf_cad" class="form-control mb-3">                        
                         <label class="" for="password_cad">Senha</label>
                         <input type="password" name="password" id="password_cad" class="form-control mb-3">
                         <label class="" for="password_conf_cad">Confirme sua Senha</label>
-                        <input type="password" name="password_conf" id="password_conf_cad" class="form-control mb-3">                        
+                        <input type="password" name="password_conf" id="password_conf_cad" class="form-control mb-3">
+                        <label for="terms"><input type="checkbox" name="terms" id="terms" class="my-4"> Aceito os <a href="<?= url("politica")?>">Termos de uso e Política de Privacidade</a></label>
+                        <span class="form-control" id="smgErrorRegistrationUser"></span>
                         <button type="submit" class="form-control btn btn-outline-primary mb-3">Cadastrar</button>
                     </form>
                 </section>

@@ -1,3 +1,4 @@
+<?php if (session_status() === PHP_SESSION_NONE) { session_start(); } ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,18 +27,23 @@
 						<a title="" href="<?= url() ?>">SOBRE</a>
 					</li><li>
 						<a title="" href="<?= url("teste"); ?>">CATEGORIAS</a>
-					</li><li>
-						<a title="" href="<?= url("contato"); ?>">DESTAQUES</a>					
-					</li>
-				</ul><ul class="navbar-nav ml-auto">
-					<li>
+					</li><li>						
 						<a title="" href="<?= url("contato"); ?>">CONTATO</a>
-					</li><li>
-						<a data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</a>
 					</li>
 				</ul>
-			<?php
-			endif; ?>
+				<ul class="navbar-nav ml-auto">
+					<li>
+						<a title="" class="py-2 my-2 mx-4" href="<?= url("user"); ?>">Painel</a>
+					</li>
+					<li>
+					<?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>
+						<button type="button" class="form-control btn btn-outline-success py-2 my-2" data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</button>
+					<?php else: ?>
+						<button type="button" id="buttonLogOut" class="form-control btn btn-outline-danger py-2 my-2">SAIR</button>
+					<?php endif; ?>
+					</li>
+				</ul>
+			<?php endif; ?>
 		</div>
 	</nav>
 	<main class="main_content container-fluid">
@@ -117,6 +123,7 @@
 	<?php if (!isset($_SESSION["token"]) || $_SESSION["token"] === false) : ?>	
 		<?php include "theme/include/modalLogin.php"; ?>
 		<script src="<?= url('theme/assets/js/authentication/login.js'); ?>"></script>
+		<script src="<?= url('theme/assets/js/authentication/userRegistration.js'); ?>"></script>		
 	<?php else: ?>
 		<script src="<?= url('theme/assets/js/authentication/logOut.js'); ?>"></script>
 	<?php endif; ?>

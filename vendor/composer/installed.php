@@ -5,11 +5,20 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
+        'reference' => 'bf66f30901e035f02e469620a689fbfe13c068bd',
         'name' => 'mayconnascimentodeoliveira/modelo',
         'dev' => true,
     ),
     'versions' => array(
+        'coffeecode/cropper' => array(
+            'pretty_version' => '2.0.3',
+            'version' => '2.0.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../coffeecode/cropper',
+            'aliases' => array(),
+            'reference' => '1f2873579dc3940e939ce04a9d995af57f53813a',
+            'dev_requirement' => false,
+        ),
         'coffeecode/optimizer' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -43,7 +52,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd62f8702f267ba61ce4132f917a9464e2b441f28',
+            'reference' => 'bf66f30901e035f02e469620a689fbfe13c068bd',
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
@@ -53,15 +62,6 @@
             'install_path' => __DIR__ . '/../monolog/monolog',
             'aliases' => array(),
             'reference' => 'c861fcba2ca29404dc9e617eedd9eff4616986b8',
-            'dev_requirement' => false,
-        ),
-        'phpmailer/phpmailer' => array(
-            'pretty_version' => 'v6.0.7',
-            'version' => '6.0.7.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
-            'aliases' => array(),
-            'reference' => '0c41a36d4508d470e376498c1c0c527aa36a2d59',
             'dev_requirement' => false,
         ),
         'psr/log' => array(
@@ -78,6 +78,24 @@
             'provided' => array(
                 0 => '1.0.0',
             ),
+        ),
+        'rosell-dk/image-mime-type-guesser' => array(
+            'pretty_version' => '0.3.1',
+            'version' => '0.3.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rosell-dk/image-mime-type-guesser',
+            'aliases' => array(),
+            'reference' => '5915934d66a7869cecc7141adf90581aad81023d',
+            'dev_requirement' => false,
+        ),
+        'rosell-dk/webp-convert' => array(
+            'pretty_version' => '2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rosell-dk/webp-convert',
+            'aliases' => array(),
+            'reference' => 'b349da7b6e04a4c269bbbbf7c279e0e433a71fd0',
+            'dev_requirement' => false,
         ),
     ),
 );

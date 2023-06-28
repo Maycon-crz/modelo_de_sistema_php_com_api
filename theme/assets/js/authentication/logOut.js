@@ -6,18 +6,19 @@ class LogOut{
 		document.getElementById("buttonLogOut").addEventListener("click", function(ev){
 			ev.preventDefault();
 			var appKey = session.checkCookieSession("createsessioncookie");
-			if(appKey != false){
+			if(appKey != false){				
 				var urlSite = $("#urlSite").val();				
 				var loadingGif = document.querySelector(".loadingGif");
 				loadingGif.innerHTML = "<div class='spinner-border text-success' role='status'><span class='sr-only'></span></div>";
 				$.ajax({
-					url: urlSite+"/apiv1/login",
+					url: urlSite+"/api/logout",
 					type: "POST",
-					data: {"logout": "exit", "app_key": appKey, "system": "web"},
+					data: {"app_key": appKey, "system": "web"},
 					dataType: "json",
-					success: function(retorno){
+					success: function(response){
 						loadingGif.innerHTML = "";
-						if(retorno.status == "success" || retorno.data == "Erro de autenticação!"){
+						console.log(response);
+						if(response.status == "success" || response.data == "Erro de autenticação!"){
 							document.location.reload(true);
 						}
 					}

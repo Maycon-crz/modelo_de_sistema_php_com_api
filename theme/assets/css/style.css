@@ -11,8 +11,8 @@ body{
     margin: 0 !important;
     padding: 0 !important;
     overflow-x: hidden;
-    background-color: rgba(48, 44, 66, 1);
-    color:#ffffff;
+    background-color: #ffffff;
+    color:#313131;
 }
 
 .navbar-nav {
@@ -144,4 +144,8 @@ body{
     z-index: 1060;
 }
 
-/* Footer */
+/* Imagens */
+
+.imagesPosts{
+    height: 300px !important;
+}

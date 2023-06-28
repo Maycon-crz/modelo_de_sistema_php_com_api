@@ -1,6 +1,6 @@
 <?php
 
-define("ROOT", "http://localhost/PARA_GITHUB/modelo_de_sistema_php");
+define("ROOT", "http://localhost/HOMOLOGACAO_WEB/modelo_de_sistema_php_com_api");
 
 define("SITE", "#Modelo");
 

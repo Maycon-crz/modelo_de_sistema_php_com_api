@@ -51,7 +51,7 @@ class LoginModel extends Connection{
 		}else{ $this->response["data"] = $this->msg; }
 		return $this->response;
 	}
-    private function checkIfTheEmailExists(string $email, bool $turnBack){
+    public function checkIfTheEmailExists(string $email, bool $turnBack){
         /*TODO:Essa função será usada em mais lugares, por isso não implementei as sessions aqui*/
         try{
             $email = $this->genericTools->filter($email);
@@ -96,7 +96,7 @@ class LoginModel extends Connection{
         $this->data["data"][0]["token"] = $this->authBO->getGenerateToken($loginDTO->getEmail());
         $this->data["data"][0]["app_key"] = $this->authBO->getExternalAppKey();
         /*Persiste e retorna os dados*/
-        try{            
+        try{
             if($loginDTO->getFrontEnd() === "web"){
                 if(session_status() === PHP_SESSION_NONE){ session_start(); }                            
                 /*Completando o DTO*/
@@ -114,7 +114,7 @@ class LoginModel extends Connection{
                 $_SESSION['token'] = $loginDTO->getToken();
                 $_SESSION['app_key_login'] = $loginDTO->getAppKey();
                 $_SESSION['hierarchy'] = $loginDTO->getHierarchy();
-                $_SESSION["system"] = $loginDTO->getFrontEnd();
+                $_SESSION["front_end"] = $loginDTO->getFrontEnd();
                 $_SESSION["phone"] = $loginDTO->getPhone();
                 $_SESSION["status_user"] = $loginDTO->getStatusUser();
                 /*---*/
@@ -126,6 +126,7 @@ class LoginModel extends Connection{
                 $this->response["status"] = "success";
                 $this->response["data"]["token"] = $loginDTO->getToken();
                 $this->response["data"]["app_key"] = $loginDTO->getAppKey();
+                $this->response["data"]["email"] = $loginDTO->getEmail();
                 $this->response["data"]["hierarchy"] = $loginDTO->getHierarchy();
                 return $this->response;
             }
@@ -152,7 +153,7 @@ class LoginModel extends Connection{
             unset($_SESSION['token']);
             unset($_SESSION['app_key_login']);
             unset($_SESSION['hierarchy']);
-            unset($_SESSION['system']);
+            unset($_SESSION['front_end']);
 
             session_destroy();        
             $this->response["status"] = "success";
