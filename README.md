@@ -2,11 +2,19 @@
 Este sitestema foi projetado para ser uma base na contrução de um site PHP, que pode funcionar como back-end para um aplicativo ou sistema desktop Flutter, com esta base é possível contruirm um Ecossistema abrangendo aplicação WEB, Desktop, e aplicativo móvel.
 
 ## Indice
+- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#requisitos](https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#tecnologias-utilizadas)">Tecnologias utilizadas</a>
 - <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#requisitos">Requisitos</a>
 - <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#como-instalar">Como instalar</a>
 - <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#imagens">Imagens</a>
 - <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#utilizando-a-api-deste-sistema-para-integrar-com-um-aplicativo-ou-sistema-desktop-flutter">Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter</a>
 
+### Tecnologias utilizadas
+- PHP, Javascript;
+- HTML, CSS;
+- Bootstrap, Json;
+- Composer, alguns pacotes baixados do Packagist informados mais a diante;
+- Arquitetura MVC;
+- API;
 ### Requisitos
 - PHP 8.* (recomendo) <a href="https://www.youtube.com/watch?v=HzIXZVctwI8&t=65s">Aqui está um vídeo ensinando como instalar o PHP diretamente no computador</a>, outra alternativa é usar o <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>;
 -  Apache 2.4 é um servidor de código aberto, aqui estão dois vídeos que vão ajudar na instalação: <a href="https://www.youtube.com/watch?v=IvcdwaDs-ik">Vídeo 1</a> - <a href="https://www.youtube.com/watch?v=Y60Vvd4lhtg&t=27s">Vídeo 2</a>;
@@ -39,6 +47,6 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 
 | Edição de postagem parte 1                                                         | Edição de postagem parte 2                                   |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| ![Imagem 1](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG) | ![Imagem 2](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG)
+| ![Imagem 1](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG) | ![Imagem 2](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_2.PNG)
 
 ### Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter
