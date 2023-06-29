@@ -17,12 +17,12 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 - Arquitetura MVC;
 - API;
 ### Requisitos
-- PHP 8.* (recomendo) <a href="https://www.youtube.com/watch?v=HzIXZVctwI8&t=65s">Aqui está um vídeo ensinando como instalar o PHP diretamente no computador</a>, outra alternativa é usar o <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>;
--  Apache 2.4 é um servidor de código aberto, aqui estão dois vídeos que vão ajudar na instalação: <a href="https://www.youtube.com/watch?v=IvcdwaDs-ik">Vídeo 1</a> - <a href="https://www.youtube.com/watch?v=Y60Vvd4lhtg&t=27s">Vídeo 2</a>;
-- MySQL e Workbench que é um sistema de gerenciamento de banco de dados, <a href="https://www.youtube.com/watch?v=IeTbZOxEwGc">aqui está um vídeo ensinando a instalar</a>;
-- <a href="https://getcomposer.org">Composer</a> é um Gerenciador de Dependências para PHP;
-- Para o desenvolvimento deste modelo de sistema foram usados os seguintes pacotes: "coffeecode/router": "1.0.*", "coffeecode/optimizer": "2.0.*", "coffeecode/cropper": "2.0.3", "league/plates": "v4.0.0-alpha", "monolog/monolog": "2.0.*" e a arquitetura mostrada na playlist PHP TIPS - Robson V. Leite <a href="https://youtube.com/playlist?list=PLi_gvjv-JgXqsmCAOrueT1-4JrnMW8_Gg">Acesse aqui</a>, porém a pesar de usar como base, a forma como é feita a interação com o banco de dados foi modificada completamente foi incluido Middlewares entre outras alterações e desenvolvimento próprio;
-- Editor de código <a href="https://code.visualstudio.com/">VS code</a> (recomendo);
+- PHP 8.* (recomendo) <a href="https://www.youtube.com/watch?v=HzIXZVctwI8&t=65s" target="_blank">Aqui está um vídeo ensinando como instalar o PHP diretamente no computador</a>, outra alternativa é usar o <a href="https://www.apachefriends.org/pt_br/index.html" target="_blank">XAMPP</a>;
+-  Apache 2.4 é um servidor de código aberto, aqui estão dois vídeos que vão ajudar na instalação: <a href="https://www.youtube.com/watch?v=IvcdwaDs-ik" target="_blank">Vídeo 1</a> - <a href="https://www.youtube.com/watch?v=Y60Vvd4lhtg&t=27s" target="_blank">Vídeo 2</a>;
+- MySQL e Workbench que é um sistema de gerenciamento de banco de dados, <a href="https://www.youtube.com/watch?v=IeTbZOxEwGc" target="_blank">aqui está um vídeo ensinando a instalar</a>;
+- <a href="https://getcomposer.org" target="_blank">Composer</a> é um Gerenciador de Dependências para PHP;
+- Para o desenvolvimento deste modelo de sistema foram usados os seguintes pacotes: "coffeecode/router": "1.0.*", "coffeecode/optimizer": "2.0.*", "coffeecode/cropper": "2.0.3", "league/plates": "v4.0.0-alpha", "monolog/monolog": "2.0.*" e a arquitetura mostrada na playlist PHP TIPS - Robson V. Leite <a href="https://youtube.com/playlist?list=PLi_gvjv-JgXqsmCAOrueT1-4JrnMW8_Gg" target="_blank">Acesse aqui</a>, porém a pesar de usar como base, a forma como é feita a interação com o banco de dados foi modificada completamente foi incluido Middlewares entre outras alterações e desenvolvimento próprio;
+- Editor de código <a href="https://code.visualstudio.com/" target="_blank">VS code</a> (recomendo);
 - Este sitema foi desenvolvido utilizando Windows 10;
 
 ### Como instalar
@@ -51,17 +51,17 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 | ![Imagem 1](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG) | ![Imagem 2](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_2.PNG)
 
 ### Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter
-- Este modelo de sistema foi desenvolvido para ser possível a integração com um aplicativo ou outro sistema podendo utilizar o mesmo usuário e senha para acesso, cadastro integrado de usuário e CRUD de postagens, já esta pronta a base do app/sistema FLutter para ser usada neste <a href="https://github.com/Maycon-crz/flutter_login_completo_com_api_php">repositório</a> você encontra a o código e a documentação.
+- Este modelo de sistema foi desenvolvido para ser possível a integração com um aplicativo ou outro sistema podendo utilizar o mesmo usuário e senha para acesso, cadastro integrado de usuário e CRUD de postagens, já esta pronta a base do app/sistema FLutter para ser usada neste <a href="https://github.com/Maycon-crz/flutter_login_completo_com_api_php" target="_blank">repositório</a> você encontra a o código e a documentação.
 
 ### Dicas de Extensões para VS Code
-- <a href="https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug">PHP Debug</a>
-- <a href="">PHP Class Generator: https://marketplace.visualstudio.com/items?itemName=damianbal.vs-phpclassgen</a>
-- <a href="">Tabnine AI Autocomplete: Link: https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox">Blackbox AI</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=Codeium.codeium">Codeium: AI Coding</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=DEVSENSE.composer-php-vscode">Composer</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets">jQuery Code Snippets</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client">PHP Intelephense</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate">Vscode Google Translate</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug" target="_blank">PHP Debug</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=damianbal.vs-phpclassgen" target="_blank">PHP Class Generator</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode" target="_blank">Tabnine AI Autocomplete: Link</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox" target="_blank">Blackbox AI</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Codeium.codeium" target="_blank">Codeium: AI Coding</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=DEVSENSE.composer-php-vscode" target="_blank">Composer</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">GitLens</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets" target="_blank">JavaScript (ES6) code snippets</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets" target="_blank">jQuery Code Snippets</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client" target="_blank">PHP Intelephense</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate" target="_blank">Vscode Google Translate</a>
