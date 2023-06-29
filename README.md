@@ -16,6 +16,7 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 - Composer, alguns pacotes baixados do Packagist informados mais a diante;
 - Arquitetura MVC;
 - API;
+- Geração e retorno de token JWT quando o login está correto e verificação de header;
 ### Requisitos
 - PHP 8.* (recomendo) <a href="https://www.youtube.com/watch?v=HzIXZVctwI8&t=65s" target="_blank">Aqui está um vídeo ensinando como instalar o PHP diretamente no computador</a>, outra alternativa é usar o <a href="https://www.apachefriends.org/pt_br/index.html" target="_blank">XAMPP</a>;
 -  Apache 2.4 é um servidor de código aberto, aqui estão dois vídeos que vão ajudar na instalação: <a href="https://www.youtube.com/watch?v=IvcdwaDs-ik" target="_blank">Vídeo 1</a> - <a href="https://www.youtube.com/watch?v=Y60Vvd4lhtg&t=27s" target="_blank">Vídeo 2</a>;
