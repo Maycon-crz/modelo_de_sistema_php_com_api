@@ -2,11 +2,11 @@
 Este sitestema foi projetado para ser uma base na contrução de um site PHP, que pode funcionar como back-end para um aplicativo ou sistema desktop Flutter, com esta base é possível contruirm um Ecossistema abrangendo aplicação WEB, Desktop, e aplicativo móvel.
 
 ## Indice
-- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#requisitos](https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#tecnologias-utilizadas)">Tecnologias utilizadas</a>
-- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#requisitos">Requisitos</a>
-- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#como-instalar">Como instalar</a>
-- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#imagens">Imagens</a>
-- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#utilizando-a-api-deste-sistema-para-integrar-com-um-aplicativo-ou-sistema-desktop-flutter">Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter</a>
+- Tecnologias utilizadas;
+- Requisitos;
+- Como instalar;
+- Imagens;
+- Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter;
 
 ### Tecnologias utilizadas
 - PHP, Javascript;
