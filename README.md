@@ -3,15 +3,16 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 
 ## Indice
 - Tecnologias utilizadas;
-- Requisitos;
+- Requisitos e links que auxiliam;
 - Como instalar;
-- Imagens;
-- Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter;
+- Imagens do modelo;
+- Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter (Contém link da base de projeto pronta).
+- Dicas de Extensões para VS Code
 
 ### Tecnologias utilizadas
 - PHP, Javascript;
 - HTML, CSS;
-- Bootstrap, Json;
+- Bootstrap, Json, Jquery;
 - Composer, alguns pacotes baixados do Packagist informados mais a diante;
 - Arquitetura MVC;
 - API;
@@ -50,3 +51,17 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 | ![Imagem 1](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG) | ![Imagem 2](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_2.PNG)
 
 ### Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter
+- Este modelo de sistema foi desenvolvido para ser possível a integração com um aplicativo ou outro sistema podendo utilizar o mesmo usuário e senha para acesso, cadastro integrado de usuário e CRUD de postagens, já esta pronta a base do app/sistema FLutter para ser usada neste <a href="https://github.com/Maycon-crz/flutter_login_completo_com_api_php">repositório</a> você encontra a o código e a documentação.
+
+### Dicas de Extensões para VS Code
+- <a href="https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug">PHP Debug</a>
+- <a href="">PHP Class Generator: https://marketplace.visualstudio.com/items?itemName=damianbal.vs-phpclassgen</a>
+- <a href="">Tabnine AI Autocomplete: Link: https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox">Blackbox AI</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=Codeium.codeium">Codeium: AI Coding</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=DEVSENSE.composer-php-vscode">Composer</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) code snippets</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets">jQuery Code Snippets</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client">PHP Intelephense</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate">Vscode Google Translate</a>
