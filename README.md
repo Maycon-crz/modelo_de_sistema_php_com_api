@@ -1,9 +1,11 @@
 # Modelo de Sistema php com API
 Este sitestema foi projetado para ser uma base na contrução de um site PHP, que pode funcionar como back-end para um aplicativo ou sistema desktop Flutter, com esta base é possível contruirm um Ecossistema abrangendo aplicação WEB, Desktop, e aplicativo móvel.
+
 ## Indice
-- <a href="">Requisitos</a>
-- <a href="">Como instalar</a>
-- <a href="">Imagens</a>
+- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#requisitos">Requisitos</a>
+- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#como-instalar">Como instalar</a>
+- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#imagens">Imagens</a>
+- <a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api/edit/main/README.md#utilizando-a-api-deste-sistema-para-integrar-com-um-aplicativo-ou-sistema-desktop-flutter">Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter</a>
 
 ### Requisitos
 - PHP 8.* (recomendo) <a href="https://www.youtube.com/watch?v=HzIXZVctwI8&t=65s">Aqui está um vídeo ensinando como instalar o PHP diretamente no computador</a>, outra alternativa é usar o <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>;
@@ -17,8 +19,11 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 ### Como instalar
 - 1º) Certifique-se se realmente não tem o PHP instalado entrando no prompt de comando e digitando: php -v caso apareça uma verssão anterior a 8 é recomendado instalar uma mais recente caso não apareça nada instale o PHP, Apache, MySQL, Workbench, Composer e o editor VS Code na sua máquina;
 - 2º) Copie o link do repositório no gitHub, va até a pasta htdocs do servidor apache, apague o endereço da pasta e digite cmd, vai abrir o prompt de comando, com o caminho da pasta, em seguida digite: git clone (da um espaço) e cole o link do repositório;
-- 3º) Abra a pasta no VS Code em seguida abra o arquivo (composer.json)
+- 3º) Abra a pasta no VS Code em seguida abra o arquivo (composer.json) personalize com seus dados, abra o terminal certifique se o caminho da pasta está correto e digite o comando: composer update --ignore-platform-reqs
+- 4º) Entre na pasta source em seguida abra o arquivo Config.php e altere o define ROOT para o link correspondente onde você clonou a pasta;
+- 5º) Certifique se o apache foi iniciado, abra o navegador e digite o link correspondente ao projeto para visualizar o layout.
 
+### Imagens
 | Home                                                   | Login                                                                                        |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
 | ![Imagem 1](theme/assets/img/documentation/home.PNG)   | ![Imagem 2](theme/assets/img/documentation/janela_de_login_e_cadastro_de_usuario_parte_1.PNG)|
@@ -35,3 +40,5 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 | Edição de postagem parte 1                                                         | Edição de postagem parte 2                                   |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | ![Imagem 1](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG) | ![Imagem 2](theme/assets/img/documentation/exemplo_edicao_de_postagem_parte_1.PNG)
+
+### Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter
