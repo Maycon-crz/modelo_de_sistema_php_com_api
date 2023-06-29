@@ -5,6 +5,7 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 - Tecnologias utilizadas;
 - Requisitos e links que auxiliam;
 - Como instalar;
+- Banco de dados;
 - Imagens do modelo;
 - Utilizando a API deste sistema para integrar com um aplicativo ou sistema desktop Flutter (Contém link da base de projeto pronta).
 - Dicas de Extensões para VS Code
@@ -32,6 +33,9 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 - 3º) Abra a pasta no VS Code em seguida abra o arquivo (composer.json) personalize com seus dados, abra o terminal certifique se o caminho da pasta está correto e digite o comando: composer update --ignore-platform-reqs
 - 4º) Entre na pasta source em seguida abra o arquivo Config.php e altere o define ROOT para o link correspondente onde você clonou a pasta;
 - 5º) Certifique se o apache foi iniciado, abra o navegador e digite o link correspondente ao projeto para visualizar o layout.
+
+### Banco de dados
+- Para configurar 
 
 ### Imagens
 | Home                                                   | Login                                                                                        |
