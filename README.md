@@ -12,6 +12,7 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 
 ### Tecnologias utilizadas
 - PHP, Javascript;
+- SQL, MySQL, Workbench, Apache 2.4;
 - HTML, CSS;
 - Bootstrap, Json, Jquery;
 - Composer, alguns pacotes baixados do Packagist informados mais a diante;
@@ -35,7 +36,8 @@ Este sitestema foi projetado para ser uma base na contrução de um site PHP, qu
 - 5º) Certifique se o apache foi iniciado, abra o navegador e digite o link correspondente ao projeto para visualizar o layout.
 
 ### Banco de dados
-- Para configurar 
+- Para configurar/importar o banco de dados no seu Workbench: Entre na sua instancia local, clique na aba (Administration) fica ao lado da aba (Schemas), clique em (Data import/Restore), selecione (Import from Self-Contained File), clique nos tês pontos (...) para selecionar o arquivo e navegue dentro da pasta do projeto (modelo_de_sistema_php_com_api/source/Models/Lib) e selecione o arquivo (modelo_site_db.sql) e clique em (Start Import);
+- Aqui está um <a href="https://www.youtube.com/watch?v=RkLB0aQh5Es">vídeo</a> que pode ajudar na importação do banco de dados;
 
 ### Imagens
 | Home                                                   | Login                                                                                        |
