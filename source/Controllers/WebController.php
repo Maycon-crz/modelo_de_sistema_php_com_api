@@ -4,22 +4,31 @@ namespace Source\Controllers;
 
 use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
-use Source\Models\User;
 use Source\Support\Seo;
+use Source\Models\UserOptionsModels\PostModel;
+use Source\Models\UserOptionsModels\DataTransferObjects\PostDTO;
 
 class WebController{
 	/*@var Engine*/
 	private $view;
 	/*@var $seo Seo*/
 	private $seo;
+	/*---*/	
+	private $postModel;
+	private $postDTO;
+	private $head;
+	private $response = array();
 	/*Web constructor*/
 	public function __construct($router){
 		$this->view = Engine::create(__DIR__."/../../theme", "php");
 		$this->view->addData(["router" => $router]);
 		$this->seo = new Seo();
+		$this->postModel = new PostModel();
+		$this->postDTO = new PostDTO();
 	}
-	public function home($data): void{
-		$head = $this->seo->render(
+	public function home($data): void{		
+		$this->response = $this->postModel->getPosts("", 1);
+		$this->head = $this->seo->render(
 			"Home | ".SITE,
 			"Compre seu ingresso e conheça o Cinema 7D.",
 			url(),
@@ -27,12 +36,13 @@ class WebController{
 			"https://www.recicladarte.com/theme/img/logo_recicladarte_marketing.jpg"
 		);
 		echo $this->view->render("home", [
-			"head" => $head
+			"head" => $this->head,
+			"posts" => $this->response
 		]);
 	}
 
 	public function contact($data): void{
-		$head = $this->seo->render(
+		$this->head = $this->seo->render(
 			"Contato | ".SITE,
 			"Entre em contato conosco, Mande uma sugestão, Tire suas dúvidas",
 			url("contato"),
@@ -40,11 +50,11 @@ class WebController{
 		);
 
 		echo $this->view->render("contact", [
-			"head" => $head,
+			"head" => $this->head,
 		]);
 	}
 	public function about($data): void{
-		$head = $this->seo->render(
+		$this->head = $this->seo->render(
 			"Sobre | ".SITE,
 			"Estamos no início de um enorme projeto que pretende ajudar na diminuição da poluição.",
 			url("sobre"),
@@ -52,11 +62,11 @@ class WebController{
 		);
 
 		echo $this->view->render("about", [
-			"head" => $head,
+			"head" => $this->head,
 		]); 
 	}
 	public function politics($data): void{
-		$head = $this->seo->render(
+		$this->head = $this->seo->render(
 			"Politica de Privacidade | ".SITE,
 			"Política de Privacidade",
 			url("politica"),
@@ -64,11 +74,11 @@ class WebController{
 		);
 
 		echo $this->view->render("politics", [
-			"head" => $head,
+			"head" => $this->head,
 		]); 
 	}
 	public function error(array $data): void{
-		$head = $this->seo->render(
+		$this->head = $this->seo->render(
 			"Error {$data['errcode']} | ".SITE,
 			/*TODO: Alterar e por o E-mail de contato do cliente*/
 			"Aconteceu algum erro no site entre en contato: ",
@@ -77,7 +87,7 @@ class WebController{
 		);
 
 		echo $this->view->render("error", [
-			"head" => $head,
+			"head" => $this->head,
 			"error" => $data["errcode"]
 		]); 	
 	}

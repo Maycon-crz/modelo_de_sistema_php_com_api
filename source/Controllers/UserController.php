@@ -70,7 +70,7 @@ class UserController extends MiddlewareAccess{
 				$this->postDTO->setDescriptionPost(isset($_POST["descriptions"]) ? $this->genericTools->filter($_POST["descriptions"]) : "");
 				$this->postDTO->setImagePost(isset($_FILES['image']) ? $_FILES['image'] : "");
 				$this->postDTO->setImageNamePost(isset($_POST["image_name_db"]) ? $this->genericTools->filter($_POST["image_name_db"]) : "");
-				$this->response = $this->postModel->postEdition($this->postDTO);				
+				$this->response = $this->postModel->postEdition($this->postDTO);
 			break;
 			case "post_delete":
 				$this->postDTO->setFrontEnd(isset($_POST["front_end"]) ? $this->genericTools->filter($_POST["front_end"]) : "");

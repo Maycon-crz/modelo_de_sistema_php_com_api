@@ -32,7 +32,7 @@
 					</li>
 				</ul>
 				<ul class="navbar-nav ml-auto">					
-					<?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>					
+					<?php if (!isset($_SESSION["email"]) || isset($_SESSION["email"]) === false) : ?>
 					<li>
 						<button type="button" class="form-control btn btn-outline-success py-2 my-2" data-bs-toggle="modal" data-bs-target="#modalLogin">ENTRAR</button>
 					</li>
@@ -53,7 +53,7 @@
 	</main>	
 	<div class="loadingGif"></div>
 	<footer class="row px-5 pt-5 mt-5">
-		<section class="col-12 rounded-pill bg-dark text-center pt-5 pb-5 mb-5">
+		<section class="col-12 rounded-pill bg-dark text-center text-white pt-5 pb-5 mb-5">
 			<div class="row">
 				<div class="col-4">
 					<div class="d-flex">
