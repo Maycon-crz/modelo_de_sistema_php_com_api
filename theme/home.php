@@ -37,7 +37,30 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/iphone|android|blackberry
                                     <button type="button" id="<?= $posts[$k]["id"]; ?>" class="form-control buttonShowMoreStyle buttonShowMoreModalPHP" data-bs-toggle="modal" data-bs-target="#modalPHP<?= $k ?>">Ver Mais</button>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalPHP<?= $k ?>" tabindex="-1" role="dialog" aria-labelledby="modalPHP<?= $k ?>Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalPHP<?= $k ?>Label"><?= $posts["data"][$k]["title"]; ?></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="card-text border"><?= $posts["data"][$k]["descriptions"]; ?></p>
+                                        <div id="divDataAdditionalForModalPHP<?= $posts["data"][$k]["id"]; ?>"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <?php if(isset($_SESSION["email"]) || isset($_SESSION["email"]) !== false) : ?>
+                                        <button type="button" class="btn btn-info" data-bs-dismiss="modal"><a href="usuario" class="text-dark text-decoration-none">Comprar</a></button>                                        
+                                    <?php else: ?>
+                                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalLogin">Comprar</button>
+                                    <?php endif; ?>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php endfor; ?>
                 </div>
             </div>
