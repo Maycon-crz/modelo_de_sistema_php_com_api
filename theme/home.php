@@ -9,7 +9,7 @@
     </article>    
 </section>
 
-<?php 
+<?php
 $qtdPosts = count($posts["data"]);
 $postsPerPage = 4;
 if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/iphone|android|blackberry|opera mini|mobile/', strtolower($_SERVER['HTTP_USER_AGENT']))) {
@@ -24,12 +24,12 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match('/iphone|android|blackberry
                     <?php for ($k = $i; $k < min($i + $postsPerPage, $qtdPosts); $k++) : ?>
                         <div class="col-12 col-md-3">
                             <div class="card my-3 shadow-lg bg-transparent rounded">
-                                <!-- código para adicionar a imagem do filme -->
+                                <!-- código para adicionar a imagem -->
                                 <img src="<?= $cropperPosts->make('theme/assets/img/posts/' . $posts["data"][$k]["image"], "300"); ?>" alt="<?= $posts["data"][$k]["title"]; ?> Imagem descritiva" class="form-control imagesPosts mx-auto mt-3">
                                 <div class="card-body">
-                                    <!-- código para adicionar o título do filme -->
+                                    <!-- código para adicionar o título -->
                                     <h2 class="card-title text-wrap h5 titleCard"><?= substr($posts["data"][$k]["title"], 0, 160); ?></h2>
-                                    <!-- código para adicionar a descrição do filme -->
+                                    <!-- código para adicionar a descrição -->
                                     <p class="card-text"><?= substr($posts["data"][$k]["descriptions"], 0, 200); ?></p>
                                 </div>
                                 <div class="card-footer">
