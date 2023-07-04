@@ -6,7 +6,6 @@ use League\Plates\Engine;
 use CoffeeCode\Optimizer\Optimizer;
 use Source\Support\Seo;
 use Source\Models\UserOptionsModels\PostModel;
-use Source\Models\UserOptionsModels\DataTransferObjects\PostDTO;
 
 class WebController{
 	/*@var Engine*/
@@ -15,7 +14,6 @@ class WebController{
 	private $seo;
 	/*---*/	
 	private $postModel;
-	private $postDTO;
 	private $head;
 	private $response = array();
 	/*Web constructor*/
@@ -24,7 +22,6 @@ class WebController{
 		$this->view->addData(["router" => $router]);
 		$this->seo = new Seo();
 		$this->postModel = new PostModel();
-		$this->postDTO = new PostDTO();
 	}
 	public function home($data): void{		
 		$this->response = $this->postModel->getPosts("", 1);
