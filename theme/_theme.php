@@ -50,7 +50,7 @@
 	</nav>
 	<main class="main_content container-fluid">
 		<?= $v->section("content"); ?>
-	</main>	
+	</main>
 	<div class="loadingGif"></div>
 	<footer class="row px-5 pt-5 mt-5">
 		<section class="col-12 rounded-pill bg-dark text-center text-white pt-5 pb-5 mb-5">
