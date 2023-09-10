@@ -34,6 +34,8 @@ Este sistema foi projetado para ser uma base na construção de um site PHP, que
 - 3º) Abra a pasta no VS Code em seguida abra o arquivo (composer.json) personalize com seus dados, abra o terminal certifique se o caminho da pasta está correto e digite o comando: composer update --ignore-platform-reqs
 - 4º) Entre na pasta source em seguida abra o arquivo Config.php e altere o define ROOT para o link correspondente onde você clonou a pasta;
 - 5º) Certifique se o apache foi iniciado, abra o navegador e digite o link correspondente ao projeto para visualizar o layout.
+- 6º) Em caso de erro ao iniciar o Apache24 com o módulo php 8 este <a href="https://www.youtube.com/watch?v=Svjxz4oM5l8&t=242" target="_blank">vídeo</a> pode auxiliar.
+- 7º) Em caso de dúvida em relação aos arquivos (php.ini) e (httpd.exe) existe arquivos auxiliares em: (modelo_de_sistema_php_com_api\source\Models\Lib\AUXILIARES).
 
 ### Banco de dados
 - Para configurar/importar o banco de dados no seu Workbench: Entre na sua instancia local, clique na aba (Administration) fica ao lado da aba (Schemas), clique em (Data import/Restore), selecione (Import from Self-Contained File), clique nos tês pontos (...) para selecionar o arquivo e navegue dentro da pasta do projeto (modelo_de_sistema_php_com_api/source/Models/Lib) e selecione o arquivo (modelo_site_db.sql) e clique em (Start Import);
