@@ -36,6 +36,7 @@ Este sistema foi projetado para ser uma base na construção de um site PHP, que
 - 5º) Certifique se o apache foi iniciado, abra o navegador e digite o link correspondente ao projeto para visualizar o layout.
 - 6º) Em caso de erro ao iniciar o Apache24 com o módulo php 8 este <a href="https://www.youtube.com/watch?v=Svjxz4oM5l8&t=242" target="_blank">vídeo</a> pode auxiliar.
 - 7º) Em caso de dúvida em relação aos arquivos (php.ini) e (httpd.exe) existe arquivos auxiliares em: (modelo_de_sistema_php_com_api\source\Models\Lib\AUXILIARES).
+- 8º) Se ocorrer algum erro ao conectar ao banco banco de dados, erro no Driver MySQL entre em php.ini e altere o (extension_dir = "ext") para (extension_dir = "C:/{seu_caminho_das_extencoes_php}/ext") se ainda não funcionar baixe o instalador MySQL conforme este <a href="https://www.youtube.com/watch?v=IeTbZOxEwGc">Vídeo</a> e tente fazer ajustes.
 
 ### Banco de dados
 - Para configurar/importar o banco de dados no seu Workbench: Entre na sua instancia local, clique na aba (Administration) fica ao lado da aba (Schemas), clique em (Data import/Restore), selecione (Import from Self-Contained File), clique nos tês pontos (...) para selecionar o arquivo e navegue dentro da pasta do projeto (modelo_de_sistema_php_com_api/source/Models/Lib) e selecione o arquivo (modelo_site_db.sql) e clique em (Start Import);
